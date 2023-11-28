@@ -5,8 +5,21 @@
     <title>Astro Weight Calculator</title>
   </head>
   <body>
-     <!-- Write your markup here  -->
-
+    <!-- Write your markup here  -->
+    <input id="user-weight" type="text" placeholder="Weight (lbs)" /></input>
+    <select id='planets'>
+      <option 1>Sun</option>
+      <option 2>Mercury</option>
+      <option 3>Venus</option>
+      <option 4>Earth</option>
+      <option 5>Mars</option>
+      <option 6>Jupiter</option>
+      <option 7>Saturn</option>
+      <option 8>Uranus</option>
+      <option 9>Pluto</option>
+    </select>
+    <button id="calculate-button" type="button" onclick="handleClickEvent(e);">Calculate</button>
+    <p id="output"></p>
     <script src="main.js" charset="utf-8"></script>
   </body>
 </html>
