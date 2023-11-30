@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Astro Weight Calculator</title>
-  </head>
-  <body>
-    <!-- Write your markup here  -->
-    <input id="user-weight" type="text" placeholder="Weight (lbs)" /></input>
-    <select id='planets'>
-      <option 1>Sun</option>
-      <option 2>Mercury</option>
-      <option 3>Venus</option>
-      <option 4>Earth</option>
-      <option 5>Mars</option>
-      <option 6>Jupiter</option>
-      <option 7>Saturn</option>
-      <option 8>Uranus</option>
-      <option 9>Pluto</option>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=JetBrains+Mono:wght@300&display=swap"
+    rel="stylesheet">
+  <title>Astro Weight Calculator</title>
+</head>
+
+<body>
+  <h1>Astro Weight Calculator</h1>
+  <div class="container">
+    <label for="enteredWeight">Enter current weight: </label>
+    <input id="user-weight" type="text" placeholder="Weight (lbs)"
+      style="font-size: 24px; height: 50px; width: 200px; background-color: rgba(255, 255, 255); color: #000000; font-weight: bold;">
+    </input>
+
+    <label for="sp">Select a planet: </label>
+    <select id='planets' type="text"
+      style="font-size: 24px; height: 50px; width: 200px; background-color: rgba(255, 255, 255); color: #000000; font-weight: bold;">
     </select>
-    <button id="calculate-button" type="button" onclick="handleClickEvent(e);">Calculate</button>
-    <p id="output"></p>
-    <script src="main.js" charset="utf-8"></script>
-  </body>
+
+    <button class="calculate-button" type="button" onclick="enteredWeightHandler(), handleClickEvent()">
+      <svg stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+          stroke-linejoin="round" stroke-linecap="round"></path>
+      </svg>
+      to infinity
+    </button>
+  </div>
+  <p id="output"></p>
+  <p2 id="reset"></p2>
+  <script type="text/javascript" src="main.js" charset="utf-8"></script>
+</body>
+
 </html>

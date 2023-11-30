@@ -1,0 +1,76 @@
+body {
+    background: url('imgs/img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+h1 {
+    text-align: center;
+    font-size: 75px;
+    padding: 75px;
+    color: white;
+} 
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 30px;
+    padding: 50px;
+    margin-right: 15px;
+    color: rgb(255, 255, 255);
+}
+
+label {
+    display: flex;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 6px 6px 8px rgba(0, 0, 0);
+    font-size: 50px;
+    padding: 100px;
+    color: white;
+}
+
+.calculate-button {
+  background: #FBFBFF;
+  border: 2px solid #FF4F00;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 1px;
+  height: 50px; 
+  margin-left: 20px;
+  font-family: monospace;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 1px rgba(0,0,0,0.09), 
+              0 4px 2px rgba(0,0,0,0.09), 
+              0 8px 4px rgba(0,0,0,0.09), 
+              0 16px 8px rgba(0,0,0,0.09),
+              0 32px 16px rgba(0,0,0,0.09);
+  transition: .3s ease-in;
+}
+
+.calculate-button:hover {
+  background: #FF4F00;
+  color: white;
+}
+
+.calculate-button svg {
+  width: 1em;
+  height: 1em;
+  color: currentColor;
+  margin-right: .5rem;
+}
+
+
